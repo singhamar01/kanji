@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <types>
+        <members>KANJI_PopUp</members>
+        <members>KANJI_Landing</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Kanji_Content</members>
+        <name>StaticResource</name>
+    </types>
+    <version>61.0</version>
+</Package>

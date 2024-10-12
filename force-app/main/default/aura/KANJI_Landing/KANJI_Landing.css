@@ -1,0 +1,92 @@
+/* ########################################## */
+/* START : surface*/
+.THIS.surface{
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    width:100%;
+    height: 100vh;
+    left:0;
+    top:0;    
+    background: linear-gradient(45deg, rgb(61, 9, 82) 0%, rgb(35, 35, 160) 35%, rgb(103, 95, 109) 100%);
+}
+.THIS.surface .fullwidth{
+    width:100% !important;
+}
+/* END : surface*/
+/* ########################################## */
+/* ########################################## */
+/* START : app_header */
+.THIS .header_logo svg{
+    fill:rgb(27, 150, 255) !important;
+}
+/* END : app_header */
+/* ########################################## */
+/* ########################################## */
+/* START : app_body */
+.THIS.surface .app_body{
+    border-top: 2px solid rgb(27, 150, 255);
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    padding: 0 !important;
+}
+.THIS.surface .app_body .flash_card{
+    height: calc(100vh - 60px);
+    /*background: linear-gradient(45deg, rgb(61, 9, 82) 0%, rgb(35, 35, 160) 35%, rgb(103, 95, 109) 100%);*/
+    color: rgb(27, 150, 255);
+}
+.THIS.surface .app_body .flash_card .flash_card_container{
+    display: flex;
+    height: 120px;    
+}
+.THIS.surface .app_body .flash_card_container .flash_card_key{
+    min-width: 120px;
+    border: 1px solid rgb(27, 150, 255) !important;
+    font-size: 72px;
+    box-shadow: 2px 2px rgb(123, 194, 255);
+}
+.THIS.surface .app_body .flash_card_container .flash_card_reading{
+    text-align: left;
+    height: 40px;
+}
+.THIS.surface .app_body .flash_card_container .flash_card_reading .flash_card_badge{
+    border: 1px solid rgb(27, 150, 255) !important;
+    color: rgb(27, 150, 255) !important;
+}
+.THIS.surface .app_body .flash_card_container .flash_card_action{
+    margin-left:auto;
+    text-align:right;
+}
+.THIS.surface .app_body .flash_card_container .flash_card_action .popup_action{ 
+    fill: rgb(40, 125, 221) !important;
+}
+.THIS.surface .app_body .flash_card_example_container{
+    border-top: 2px solid rgb(27, 150, 255);
+    text-align: left;
+    
+}
+
+/* END : app_body */
+/* ########################################## */
+/* ########################################## */
+/* START : flash_card */
+
+/* END : flash_card */
+/* ########################################## */
+/* ########################################## */
+/* START : app_footer */
+.THIS.surface .app_footer{
+    height:40px;
+    position: fixed;
+    bottom:5px;
+    left: 0;
+    width: 100%;    
+}
+.THIS.surface .app_footer svg.swipe_action {
+    fill: rgb(40, 125, 221) !important;
+}
+.THIS.surface .app_footer .popup_action{ 
+    fill: rgb(40, 125, 221) !important;
+}
+/* END : app_footer */
+/* ########################################## */

@@ -1,0 +1,893 @@
+[
+    {
+        "key": "人",
+        "symbol": "人",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひと"
+        ],
+        "onyomi": [
+            "ジン",
+            "ニン"
+        ],
+        "help_text": "Person's kanji",
+        "examples": [
+            {
+                "key": "人",
+                "phrase": "ひと",
+                "phrase_reading": "ひと",
+                "english": "person",
+                "example": "人",
+                "example_reading": "ひと",
+                "sentence": "ここは人がおおいです",
+                "sentence_reading": "ここはひとがおおいです"
+            },
+            {
+                "key": "人",
+                "phrase": "ジン",
+                "phrase_reading": "じん",
+                "english": "origin",
+                "example": "カナダ人",
+                "example_reading": "かなだじん",
+                "sentence": "その人はカナダ人です",
+                "sentence_reading": "そのひとはかなだじんです"
+            },
+            {
+                "key": "人",
+                "phrase": "ニン",
+                "phrase_reading": "にん",
+                "english": "number (of people)",
+                "example": "三人",
+                "example_reading": "さんにん",
+                "sentence": "子供が三人います",
+                "sentence_reading": "こどもがさんにんいます"
+            }
+        ],
+        "example_count": 3
+    },
+    {
+        "key": "日",
+        "symbol": "日",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひ",
+            "か"
+        ],
+        "onyomi": [
+            "ニチ",
+            ""
+        ],
+        "help_text": "Day Kanji",
+        "examples": [
+            {
+                "key": "日",
+                "phrase": "ひ",
+                "phrase_reading": "ひ",
+                "english": "Day",
+                "example": "その日",
+                "example_reading": "そのひ",
+                "sentence": "すみません。その日はいそがしいです",
+                "sentence_reading": "すみません。そのひはいそがしいです"
+            },
+            {
+                "key": "日",
+                "phrase": "か",
+                "phrase_reading": "か",
+                "english": "Day of the month",
+                "example": "三日",
+                "example_reading": "みっか",
+                "sentence": "きょうは三日です",
+                "sentence_reading": "きょうはみっかです"
+            },
+            {
+                "key": "日",
+                "phrase": "ニチ",
+                "phrase_reading": "にち",
+                "english": "Day of the month",
+                "example": "十五日",
+                "example_reading": "じゅうごにち",
+                "sentence": "あしたは十五日です",
+                "sentence_reading": "あしたはじゅうごにちです"
+            },
+            {
+                "key": "日",
+                "phrase": "ニチ",
+                "phrase_reading": "にち",
+                "english": "Day",
+                "example": "日よう日",
+                "example_reading": "にちようび",
+                "sentence": "日よう日はやすみです",
+                "sentence_reading": "にちようびはやすみです"
+            }
+        ],
+        "example_count": 4
+    },
+    {
+        "key": "一",
+        "symbol": "一",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひと（つ）"
+        ],
+        "onyomi": [
+            "イチ",
+            "イッ",
+            "ツイ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "一",
+                "phrase": "ひと",
+                "phrase_reading": "ひと",
+                "english": "One (count)",
+                "example": "一つ",
+                "example_reading": "ひとつ",
+                "sentence": "すみません。それを一つください。",
+                "sentence_reading": "すみません。それをひとつください。"
+            },
+            {
+                "key": "一",
+                "phrase": "ひと",
+                "phrase_reading": "ひと",
+                "english": "One (person)",
+                "example": "一人",
+                "example_reading": "ひとり",
+                "sentence": "一人でお寺に行きます",
+                "sentence_reading": "ひとりでおてらにいきます"
+            },
+            {
+                "key": "一",
+                "phrase": "イチ",
+                "phrase_reading": "いち",
+                "english": "One (day)",
+                "example": "一日",
+                "example_reading": "いちにち",
+                "sentence": "あした一日中いろいろなかいぎがあります",
+                "sentence_reading": "あしたいちにちちゅういろいろなかいぎがあります"
+            },
+            {
+                "key": "一",
+                "phrase": "ツイ",
+                "phrase_reading": "つい",
+                "english": "First (day)",
+                "example": "一日",
+                "example_reading": "ついたち",
+                "sentence": "ー月一日は休みです",
+                "sentence_reading": "いちがつついたちはやすみです"
+            },
+            {
+                "key": "一",
+                "phrase": "イッ",
+                "phrase_reading": "いっ",
+                "english": "One (minute)",
+                "example": "一分",
+                "example_reading": "いっぷん",
+                "sentence": "ここからうちまで歩いて一分です",
+                "sentence_reading": "ここからうちまであるいていっぷんです"
+            }
+        ],
+        "example_count": 5
+    },
+    {
+        "key": "二",
+        "symbol": "二",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ふた（つ）",
+            "ふつ（か）"
+        ],
+        "onyomi": [
+            "ニ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "二",
+                "phrase": "ふた",
+                "phrase_reading": "ふた",
+                "english": "Two (count)",
+                "example": "二つ",
+                "example_reading": "ふたつ",
+                "sentence": "コーヒーを二つください。",
+                "sentence_reading": "コーヒーをふたつください。"
+            },
+            {
+                "key": "二",
+                "phrase": "ふつ",
+                "phrase_reading": "ふつ",
+                "english": "Second (day)",
+                "example": "二日",
+                "example_reading": "ふつか",
+                "sentence": "ー月二日は会社休みです",
+                "sentence_reading": "いちがつふつかはかいしゃやすみです"
+            },
+            {
+                "key": "二",
+                "phrase": "ふた",
+                "phrase_reading": "ふた",
+                "english": "Second (person)",
+                "example": "二人",
+                "example_reading": "ふつり",
+                "sentence": "二人でレストランに行きましょう",
+                "sentence_reading": "ふつりでレストランにいきましょう"
+            },
+            {
+                "key": "二",
+                "phrase": "ニ",
+                "phrase_reading": "に",
+                "english": "Two (count)",
+                "example": "ニ個",
+                "example_reading": "にこ",
+                "sentence": "チキンカツをニ個ください",
+                "sentence_reading": "チキンカツをにこください"
+            }
+        ],
+        "example_count": 4
+    },
+    {
+        "key": "三",
+        "symbol": "三",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みっ（つ）"
+        ],
+        "onyomi": [
+            "サン"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "三",
+                "phrase": "みっ",
+                "phrase_reading": "みっ",
+                "english": "Three (count)",
+                "example": "三つ",
+                "example_reading": "みっつ",
+                "sentence": "ハンバーガーを三つとポテトを二つください。",
+                "sentence_reading": "ハンバーガーをみっつとポテトをふたつください。"
+            },
+            {
+                "key": "三",
+                "phrase": "みっ",
+                "phrase_reading": "みっ",
+                "english": "Three (day)",
+                "example": "三日",
+                "example_reading": "みっか",
+                "sentence": "あそこで三日いました。",
+                "sentence_reading": "あそこでみっかいました。"
+            },
+            {
+                "key": "三",
+                "phrase": "サン",
+                "phrase_reading": "さん",
+                "english": "Three (person)",
+                "example": "三人",
+                "example_reading": "さんにん",
+                "sentence": "かぞくは三人です。",
+                "sentence_reading": "かぞくはさんにんです。"
+            }
+        ],
+        "example_count": 3
+    },
+    {
+        "key": "四",
+        "symbol": "四",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "よん",
+            "よ",
+            "よっ（つ）"
+        ],
+        "onyomi": [
+            "シ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "四",
+                "phrase": "よん",
+                "phrase_reading": "よん",
+                "english": "Four (count)",
+                "example": "四回",
+                "example_reading": "よんかい",
+                "sentence": "ディズニーランドに四回いきました",
+                "sentence_reading": "ディズニーランドによんかいいきました"
+            },
+            {
+                "key": "四",
+                "phrase": "よ",
+                "phrase_reading": "よ",
+                "english": "Four (Person)",
+                "example": "四人",
+                "example_reading": "よにん",
+                "sentence": "かぞくは四人です。",
+                "sentence_reading": "かぞくはよにんです。"
+            },
+            {
+                "key": "四",
+                "phrase": "よっ",
+                "phrase_reading": "よっ",
+                "english": "Four (count)",
+                "example": "四つ",
+                "example_reading": "よっつ",
+                "sentence": "このパンを四つください。",
+                "sentence_reading": "このパンをよっつください。"
+            },
+            {
+                "key": "四",
+                "phrase": "よっ",
+                "phrase_reading": "よっ",
+                "english": "Four (day)",
+                "example": "四日",
+                "example_reading": "よっか",
+                "sentence": "カナダに四日います。",
+                "sentence_reading": "カナダによっかいます。"
+            },
+            {
+                "key": "四",
+                "phrase": "シ",
+                "phrase_reading": "し",
+                "english": "Month of the year",
+                "example": "四月",
+                "example_reading": "しがつ",
+                "sentence": "きょうは四月四日です。",
+                "sentence_reading": "きょうはしがつよっかです。"
+            }
+        ],
+        "example_count": 5
+    },
+    {
+        "key": "五",
+        "symbol": "五",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "いつ（つ）"
+        ],
+        "onyomi": [
+            "ゴ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "五",
+                "phrase": "いつ",
+                "phrase_reading": "いつ",
+                "english": "Five (count)",
+                "example": "五つ",
+                "example_reading": "いつつ",
+                "sentence": "チーズバーガーを五つください。",
+                "sentence_reading": "チーズバーガーをいつつください。"
+            },
+            {
+                "key": "五",
+                "phrase": "いつ",
+                "phrase_reading": "いつ",
+                "english": "Five (Day)",
+                "example": "五日 ",
+                "example_reading": "いつか",
+                "sentence": "サンフランシスコに五日いました。",
+                "sentence_reading": "サンフランシスコにいつかいました。"
+            },
+            {
+                "key": "五",
+                "phrase": "いつ",
+                "phrase_reading": "いつ",
+                "english": "Day of the month",
+                "example": "五日 ",
+                "example_reading": "いつか",
+                "sentence": "きょうは五日です。",
+                "sentence_reading": "きょうはいつかです。"
+            },
+            {
+                "key": "五",
+                "phrase": "ゴ",
+                "phrase_reading": "ご",
+                "english": "Five (Person)",
+                "example": "五人",
+                "example_reading": "ごにん",
+                "sentence": "五人でキャンプにいきます。",
+                "sentence_reading": "ごにんでキャンプにいきます。"
+            }
+        ],
+        "example_count": 4
+    },
+    {
+        "key": "六",
+        "symbol": "六",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "むっ（つ）"
+        ],
+        "onyomi": [
+            "ロク"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "六",
+                "phrase": "むっ",
+                "phrase_reading": "むっ",
+                "english": "Six (count)",
+                "example": "六つ",
+                "example_reading": "むっつ",
+                "sentence": "ビールを六つください。",
+                "sentence_reading": "ビールをむっつください。"
+            },
+            {
+                "key": "六",
+                "phrase": "むい",
+                "phrase_reading": "むい",
+                "english": "Six (day)",
+                "example": "六日",
+                "example_reading": "むいか",
+                "sentence": "インドに六日いました。",
+                "sentence_reading": "インドにむいかいました。"
+            },
+            {
+                "key": "六",
+                "phrase": "むい",
+                "phrase_reading": "むい",
+                "english": "Day of the month",
+                "example": "六日",
+                "example_reading": "むいか",
+                "sentence": "きょうは六日です。",
+                "sentence_reading": "きょうはむいかです。"
+            },
+            {
+                "key": "六",
+                "phrase": "ロク",
+                "phrase_reading": "ろく",
+                "english": "Six (Person)",
+                "example": "六人",
+                "example_reading": "ろくにん",
+                "sentence": "かぞくは六人です。",
+                "sentence_reading": "かぞくはろくにんです。"
+            }
+        ],
+        "example_count": 4
+    },
+    {
+        "key": "七",
+        "symbol": "七",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "なな"
+        ],
+        "onyomi": [
+            "シチ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "七"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "八",
+        "symbol": "八",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "やっ（つ）"
+        ],
+        "onyomi": [
+            "ハチ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "八"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "九",
+        "symbol": "九",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ここの"
+        ],
+        "onyomi": [
+            "キュウ",
+            "ク"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "九"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "十",
+        "symbol": "十",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "とお"
+        ],
+        "onyomi": [
+            "ジュウ"
+        ],
+        "help_text": "number kanji",
+        "examples": [
+            {
+                "key": "十"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "月",
+        "symbol": "月",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "つき"
+        ],
+        "onyomi": [
+            "ゲツ",
+            "ガツ"
+        ],
+        "examples": [
+            {
+                "key": "月"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "火",
+        "symbol": "火",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひ"
+        ],
+        "onyomi": [
+            "カ"
+        ],
+        "examples": [
+            {
+                "key": "火"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "水",
+        "symbol": "水",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みず"
+        ],
+        "onyomi": [
+            "スイ"
+        ],
+        "examples": [
+            {
+                "key": "水"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "木",
+        "symbol": "木",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "モク"
+        ],
+        "examples": [
+            {
+                "key": "木"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "金",
+        "symbol": "金",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "かね"
+        ],
+        "onyomi": [
+            "キン"
+        ],
+        "examples": [
+            {
+                "key": "金"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "土",
+        "symbol": "土",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ド"
+        ],
+        "examples": [
+            {
+                "key": "土"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "百",
+        "symbol": "百",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ヒャク"
+        ],
+        "examples": [
+            {
+                "key": "百"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "万",
+        "symbol": "万",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "マン"
+        ],
+        "examples": [
+            {
+                "key": "万"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "円",
+        "symbol": "円",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "エン"
+        ],
+        "examples": [
+            {
+                "key": "円"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "行",
+        "symbol": "行",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "い（きます）"
+        ],
+        "onyomi": [
+            "コウ"
+        ],
+        "examples": [
+            {
+                "key": "行"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "来",
+        "symbol": "来",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "き（ます）"
+        ],
+        "onyomi": [
+            "ライ"
+        ],
+        "examples": [
+            {
+                "key": "来"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "休",
+        "symbol": "休",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "やす（みます）"
+        ],
+        "examples": [
+            {
+                "key": "休"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "見",
+        "symbol": "見",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "み（ます）",
+            "み（せます）"
+        ],
+        "examples": [
+            {
+                "key": "見"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "今",
+        "symbol": "今",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "いま"
+        ],
+        "onyomi": [
+            "コン"
+        ],
+        "examples": [
+            {
+                "key": "今"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "大",
+        "symbol": "大",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "おお（きい）"
+        ],
+        "onyomi": [
+            "ダイ"
+        ],
+        "examples": [
+            {
+                "key": "大"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "小",
+        "symbol": "小",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ちい（さい）"
+        ],
+        "onyomi": [
+            "ショウ"
+        ],
+        "examples": [
+            {
+                "key": "小"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "上",
+        "symbol": "上",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "うえ"
+        ],
+        "onyomi": [
+            "ジャウ"
+        ],
+        "examples": [
+            {
+                "key": "上"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "下",
+        "symbol": "下",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "した"
+        ],
+        "onyomi": [
+            "カ"
+        ],
+        "examples": [
+            {
+                "key": "下"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "中",
+        "symbol": "中",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "なか"
+        ],
+        "onyomi": [
+            "チュウ"
+        ],
+        "examples": [
+            {
+                "key": "中"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "東京",
+        "symbol": "東京",
+        "level": 4,
+        "complexity": "easy",
+        "kunyomi": [
+            "とうきょう"
+        ],
+        "onyomi": [
+            "トウキョウ"
+        ],
+        "examples": [],
+        "example_count": 0
+    },
+    {
+        "key": "船堀",
+        "symbol": "船堀",
+        "level": 4,
+        "complexity": "easy",
+        "kunyomi": [
+            "ふなぼり"
+        ],
+        "examples": [],
+        "onyomi": [],
+        "example_count": 0
+    }
+]

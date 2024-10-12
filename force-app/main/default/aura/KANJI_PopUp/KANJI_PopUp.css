@@ -1,0 +1,61 @@
+.THIS .flash_card_example_item{
+    color: rgb(27, 150, 255);
+}
+
+.THIS .flash_card_badge{
+    border: 1px solid rgb(27, 150, 255) !important;
+    color: rgb(27, 150, 255) !important;
+}
+.THIS .stroke_holder{
+    width: 100%;
+    overflow: auto;
+}
+/* ############################################ */
+/* START :STROKE SVG CSS */
+
+.THIS .stroke_order_diagram--outer_container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom:15px;
+}
+
+.THIS .stroke_order_diagram--guide_line {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 2;
+    stroke-linecap: square;
+    stroke-linejoin: square;
+    stroke-dasharray: 5, 5;
+}
+
+.THIS .stroke_order_diagram--bounding_box {
+    fill: none;
+    stroke: #ddd;
+    stroke-width: 2;
+    stroke-linecap: square;
+    stroke-linejoin: square;
+}
+
+.THIS .stroke_order_diagram--current_path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.THIS .stroke_order_diagram--existing_path {
+    fill: none;
+    stroke: #aaa;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.THIS .stroke_order_diagram--path_start {
+    fill: rgba(255,0,0,0.7);
+    stroke: none;
+}
+/* END :STROKE SVG CSS */
+/* ############################################ */

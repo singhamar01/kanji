@@ -1,0 +1,159 @@
+<!--
+** Name :KANJI_PopUp.cmp 
+** Purpose: PopUp page for kanji
+** Created by : 
+**
+======================================================
+History
+=========
+VERSION     AUTHOR            DATE              DETAIL                   FEATURES/CSR/TTP
+============================================================================================
+  1.0 -     SAMYA                               Initial version
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  1.1 -     SAMYA                               Initial version
+-->
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+<!-- ======================================================================= -->
+<!-- START : Include external JS -->  
+<!-- END : Include external JS -->  
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : Declare Attributes -->
+<aura:attribute name="showPopup" type="Boolean" default="false" description="to show popup"/>
+<aura:attribute name="mode" type="String" default="" description="to keep selected target"/>
+<aura:attribute name="element" type="Object" description="to keep phrase list"/>
+<aura:attribute name="strokeContent" type="String" default="" description="to keep stroke"/>
+<!-- END : Declare Attributes -->    
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : Declare Methods and Handlers --> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<!-- END : Declare Methods and Handlers -->
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : DOM Design -->  
+<!-- ================================== -->
+<!-- START : when show landing -->
+<aura:if isTrue="{!v.showPopup}">      
+    <!-- ================= -->
+    <!-- START : modal -->
+    <section role="dialog" tabindex="-1" aria-modal="true"  class="slds-modal slds-modal_large slds-fade-in-open" ondblclick="{!c.closePopup}">
+        <!-- ================= -->
+        <!-- START : modal container -->
+        <div class="slds-modal__container">
+            <!-- ================= -->
+            <!-- START : modal close action -->
+            <button class="slds-button slds-button_icon slds-modal__close" onclick="{!c.closePopup}">
+                <lightning:icon iconName="utility:close" variant="border-inverse" alternativeText="close" title="close" size="small" class="close"/>
+            </button>
+            <!-- END : modal close action -->
+            <!-- ================= -->
+            <!-- ================= -->
+            <!-- START : modal title -->
+            <div class="slds-modal__header">
+                <h1 class="slds-modal__title slds-hyphenate">{!v.element.key} : {!v.mode}
+                    <aura:if isTrue="{!v.mode=='example'}">
+                        &nbsp;&#40;{!v.element.example_count}&#41;
+                    </aura:if>
+                </h1>
+            </div>
+            <!-- END : modal title -->
+            <!-- ================= -->
+            <!-- ================= -->
+            <!-- START : modal content -->
+            <div class="slds-modal__content slds-p-around_medium">
+                <!-- ================= -->
+                <!-- START : mode-example -->
+                <aura:if isTrue="{!v.mode=='example'}">
+                    <aura:iteration items="{!v.element.examples}" var="example_item"  indexVar="example_indx">
+                        <div class="flash_card_example_item slds-box slds-m-top_small slds-form">
+                            <!-- ================= -->
+                            <!-- START : index -->
+                            <div class="slds-form-element">              
+                                <label class="slds-form-element__label">
+                                    <span class="slds-badge flash_card_badge">{!example_indx+1}</span>
+                                </label>
+                            </div>
+                            <!-- END : index -->
+                            <!-- ================= -->
+                            <!-- ================= -->
+                            <!-- START : Phrase -->
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">Keyword &#40;Phrase&#41;</label>
+                                <div class="slds-form-element__control">
+                                    <div>{!example_item.example} &#40;{!example_item.phrase}&#41;</div>
+                                </div>
+                            </div>
+                            <!-- END : Phrase -->
+                            <!-- ================= -->
+                            <!-- ================= -->
+                            <!-- START : English -->
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">English Context</label>
+                                <div class="slds-form-element__control">
+                                    <div>{!example_item.english}</div>
+                                </div>
+                            </div>
+                            <!-- END : English -->
+                            <!-- ================= -->                                                                                                  
+                            <!-- ================= -->
+                            <!-- START : Sentence -->
+                            <div class="slds-form-element">
+                                <label class="slds-form-element__label">Sentence</label>
+                                <div class="slds-form-element__control">
+                                    <div><aura:unescapedHtml value="{!example_item.sentence}"/></div>
+                                    <div><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>                                                            
+                                </div>
+                            </div>
+                            <!-- END : Sentence -->
+                            <!-- ================= -->                                                  
+                        </div>
+                    </aura:iteration>
+                    <!-- ================= -->
+                    <!-- START : when no example -->
+                    <aura:if isTrue="{!empty(v.element.examples)}">
+                        <div class="slds-box slds-theme_error">
+                            <div class="slds-box slds-theme_default">
+                                No example found
+                            </div>
+                        </div>
+                    </aura:if>
+                    <!-- END : when no example -->
+                    <!-- ================= -->
+                </aura:if>
+                <!-- END : mode-example -->
+                <!-- ================= -->
+                <!-- ================= -->
+                <!-- START : mode-stroke -->
+                <aura:if isTrue="{!v.mode=='stroke'}">
+                    <div class="slds-box stroke_holder">
+                        <aura:unescapedHtml value="{!v.strokeContent}"/>
+                    </div>                    
+                </aura:if>
+                <!-- END : mode-stroke -->
+                <!-- ================= -->
+            </div>
+            <!-- END : modal content -->
+            <!-- ================= -->
+        </div>
+        <!-- END : modal container -->
+        <!-- ================= -->
+    </section>      
+    <!-- END : modal -->
+    <!-- ================= -->
+    <!-- ================= -->
+    <!-- START : backdrop -->
+    <div class="slds-backdrop slds-backdrop_open" role="presentation"></div>
+    <!-- END : backdrop -->
+    <!-- ================= -->
+</aura:if>
+<!-- END : when show landing -->
+<!-- ================================== -->
+<!-- END : DOM Design -->
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+</aura:component>

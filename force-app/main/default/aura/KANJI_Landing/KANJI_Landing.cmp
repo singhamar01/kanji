@@ -1,0 +1,283 @@
+<!--
+** Name :KANJI_Landing.cmp 
+** Purpose: landing page for kanji
+** Created by : 
+**
+======================================================
+History
+=========
+VERSION     AUTHOR            DATE              DETAIL                   FEATURES/CSR/TTP
+============================================================================================
+  1.0 -     SAMYA                               Initial version
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  1.1 -     SAMYA                               Initial version
+-->
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+<!-- ======================================================================= -->
+<!-- START : Include external JS -->  
+<!-- END : Include external JS -->  
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : Declare Attributes -->
+<aura:attribute name="showLanding" type="Boolean" default="true" description="to show landing option"/>
+<aura:attribute name="target" type="String" default="" description="to keep selected target"/>
+<aura:attribute name="inDesignMode" type="Boolean" default="false" description="to identify design mode"/>
+<aura:attribute name="pharseList" type="List" default="[]" description="to keep phrase list"/>
+<aura:attribute name="displayPharseList" type="List" default="[]" description="to keep filtered phrase list"/>
+<aura:attribute name="display_count" type="String" default="0" description="to keep display count"/>
+<aura:attribute name="carousel_tranlateX" type="String" default="0" description="to keep phrase list"/>
+<aura:attribute name="carousel_index" type="String" default="0" description="to keep slide index"/>
+<aura:attribute name="showPopup" type="Boolean" default="false" description="to show popup"/>
+<aura:attribute name="mode" type="String" default="" description="to keep selected target"/>
+<aura:attribute name="focusedElement" type="Object" description="to keep phrase list"/>
+<aura:attribute name="saerch_input" type="String" default="" description="to keep selected target"/>  
+<!-- END : Declare Attributes -->    
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : Declare Methods and Handlers --> 
+<aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+<!-- END : Declare Methods and Handlers -->
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+<!-- ####################################################################### -->
+<!-- ======================================================================= -->
+<!-- START : DOM Design -->  
+<!-- ================================== -->
+<!-- START : when show landing -->
+<aura:if isTrue="{!v.showLanding}">      
+    <!-- ================= -->
+    <!-- START : surface -->
+    <div class="surface">
+        <!-- ================= -->
+        <!-- START : card -->
+        <article class="slds-card fullwidth">
+            <!-- ================= -->
+            <!-- START : card header -->
+            <div class="slds-card__header slds-grid app_header">
+                <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                    <!-- ================= -->
+                    <!-- START : logo -->
+                    <div class="slds-media__figure">
+                    <span class="slds-icon_container" title="account">
+                        <lightning:icon iconName="utility:heart" alternativeText="KANJI APP" title="KANJI APP" size="small" class="header_logo"/>
+                        <span class="slds-assistive-text">account</span>
+                    </span>
+                    </div>
+                    <!-- END : logo -->
+                    <!-- ================= -->
+                    <!-- ================= -->
+                    <!-- START : search box -->
+                    <div class="slds-media__body">
+                        <h2 class="slds-card__header-title">
+                            <lightning:input aura:id="enter_search" name="enter-search" label="Search when user hits the 'enter' key" variant="label-hidden" type="search" onchange="{!c.doSearch}" value="{!v.search_input}"/>
+                        </h2>
+                    </div>
+                    <!-- END : search box -->
+                    <!-- ================= -->
+                    <!-- ================= -->
+                    <!-- START : result -->
+                    <div class="slds-no-flex">
+                        Result : &#40;{!v.display_count}&#41;
+                    </div>
+                    <!-- END : result -->
+                    <!-- ================= -->
+                </header>
+            </div>
+            <!-- END : card header -->
+            <!-- ================= -->
+            <!-- ================= -->
+            <!-- START : card body -->
+            <div class="slds-card__body slds-card__body_inner app_body">
+                <!-- ================= -->
+                <!-- START : carousel -->
+                <div class="slds-carousel">
+                    <!-- ================= -->
+                    <!-- START : carousel stage -->
+                    <div class="slds-carousel__stage">
+                        <!-- ================= -->
+                        <!-- START : carousel panels -->
+                        <div class="slds-carousel__panels" style="{!'transform:translateX('+v.carousel_tranlateX+'%)'}">
+                            <!-- ================= -->
+                            <!-- START : iterating over the phrase list -->
+                            <aura:iteration items="{!v.displayPharseList}" var="item"  indexVar="indx">
+                                <!-- ================= -->
+                                <!-- START : phrase card -->
+                                <div class="slds-carousel__panel" aria-hidden="false" role="tabpanel" data-panel-id="{!'indicator_'+indx}" ontouchstart="{!c.touchStart}" ontouchmove="{!c.touchMove}">
+                                    <div class="slds-carousel__content flash_card" >    
+                                        <!-- ================= -->
+                                        <!-- START : flash_card_container -->
+                                        <div class="slds-carousel__content-title flash_card_container">
+                                            <!-- ================= -->
+                                            <!-- START : phrase key -->
+                                            <div class="slds-box flash_card_key">
+                                                {!item.key}
+                                            </div>                   
+                                            <!-- END : phrase key -->
+                                            <!-- ================= -->
+                                            <!-- ================= -->
+                                            <!-- START : phrase reading -->
+                                            <div class="slds-m-left_small slds-p-around_x-small">
+                                                <!-- ================= -->
+                                                <!-- START : kunyomi -->
+                                                <div class="flash_card_reading">
+                                                    <aura:iteration items="{!item.kunyomi}" var="kunyomi_item"  indexVar="kunyomi_indx">
+                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">{!kunyomi_item}</span>
+                                                    </aura:iteration>
+                                                </div>
+                                                <!-- END : kunyomi -->
+                                                <!-- ================= -->
+                                                <!-- ================= -->
+                                                <!-- START : onyomi -->
+                                                <div class="flash_card_reading">
+                                                    <aura:iteration items="{!item.onyomi}" var="onyomi_item"  indexVar="onyomi_indx">
+                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">{!onyomi_item}</span>
+                                                    </aura:iteration>
+                                                </div>
+                                                <!-- END : onyomi -->
+                                                <!-- ================= -->
+                                            </div>
+                                            <!-- END : phrase reading -->
+                                            <!-- ================= -->
+                                            <!-- ================= -->
+                                            <!-- START : phrase action -->    
+                                            <aura:if isTrue="{!!$Browser.isPhone}">                                     
+                                                <div class="flash_card_action">                                                
+                                                    <ul>
+                                                        <li>
+                                                            <lightning:buttonIcon iconName="utility:brush" variant="bare" alternativeText="stroke" size="medium" iconClass="popup_action" title="stroke" onclick="{!c.openPopup}" name="stroke"/>
+                                                        </li>
+                                                        <li>
+                                                            <lightning:buttonIcon iconName="utility:comments" variant="bare" alternativeText="example" size="medium" iconClass="popup_action" title="example" onclick="{!c.openPopup}" name="example"/>
+                                                        </li>
+                                                    </ul>
+                                                </div>  
+                                            </aura:if>                                      
+                                            <!-- END : phrase action -->
+                                            <!-- ================= -->
+                                        </div>  
+                                        <!-- END : flash_card_container -->    
+                                        <!-- ================= -->   
+                                        <!-- ================= -->
+                                        <!-- START : example -->
+                                        <div class="flash_card_example_container slds-m-top_small">
+                                            <aura:iteration items="{!item.examples}" var="example_item"  indexVar="example_indx" end="2">
+                                                <div class="flash_card_example_item slds-box slds-m-top_small slds-form">
+                                                    <!-- ================= -->
+                                                    <!-- START : Phrase -->
+                                                    <div class="slds-form-element">
+                                                        <label class="slds-form-element__label">Keyword &#40;Phrase&#41;</label>
+                                                        <div class="slds-form-element__control">
+                                                            <div>{!example_item.example} &#40;{!example_item.phrase}&#41;</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END : Phrase -->
+                                                    <!-- ================= -->
+                                                    <!-- ================= -->
+                                                    <!-- START : English -->
+                                                    <div class="slds-form-element">
+                                                        <label class="slds-form-element__label">English Context</label>
+                                                        <div class="slds-form-element__control">
+                                                            <div>{!example_item.english}</div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END : English -->
+                                                    <!-- ================= -->                                                                                                  
+                                                    <!-- ================= -->
+                                                    <!-- START : Sentence -->
+                                                    <div class="slds-form-element">
+                                                        <label class="slds-form-element__label">Sentence</label>
+                                                        <div class="slds-form-element__control">
+                                                            <div><aura:unescapedHtml value="{!example_item.sentence}"/></div>
+                                                            <div><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>                                                            
+                                                        </div>
+                                                    </div>
+                                                    <!-- END : Sentence -->
+                                                    <!-- ================= -->                                                    
+                                                </div>
+                                            </aura:iteration>
+                                        </div>
+                                        <!-- END : example -->
+                                        <!-- ================= -->                                        
+                                    </div>
+                                </div>
+                                <!-- END : phrase card -->
+                                <!-- ================= -->
+                            </aura:iteration>
+                            <!-- END : iterating over the phrase list -->
+                            <!-- ================= -->
+                        </div>
+                        <!-- END : carousel panels -->
+                        <!-- ================= -->
+                        <!-- ================= -->
+                        <!-- START : carousel indicator -->
+                        <!--
+                        <ul class="slds-carousel__indicators" role="tablist">
+                            <li class="slds-carousel__indicator" role="presentation">                                
+                                <lightning:buttonIcon iconName="utility:chevronleft" variant="bare" alternativeText="Settings" title="Settings" />
+                            </li>
+                            <li class="slds-carousel__indicator" role="presentation">
+                                <lightning:buttonIcon iconName="utility:chevronright" variant="bare" alternativeText="Settings" title="Settings" />
+                            </li>
+                        </ul>
+                        -->
+                        <!-- END : carousel indicator -->
+                        <!-- ================= -->
+                    </div>
+                    <!-- END : carousel stage -->
+                    <!-- ================= -->
+                </div>
+                <!-- END : carousel -->
+                <!-- ================= -->
+            </div>
+            <!-- END : card body -->
+            <!-- ================= -->
+            <!-- ================= -->
+            <!-- START : card body -->
+            <footer class="app_footer slds-p-around_small slds-grid">
+                <!-- ================= -->
+                <!-- START : for desktop -->
+                <aura:if isTrue="{!!$Browser.isPhone}">
+                    <div class="slds-col slds-size_1-of-2 slds-text-align_left">
+                        <lightning:buttonIcon iconName="utility:chevronleft" variant="bare" alternativeText="previous" title="previous" size="large" iconClass="{!if(v.carousel_index == '0', '', 'swipe_action')}" onclick="{!c.doPrevious}" disabled="{!v.carousel_index == '0'}"/>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                        <lightning:buttonIcon iconName="utility:chevronright" variant="bare" alternativeText="next" title="next" size="large" iconClass="{!if(sub(v.display_count,v.carousel_index) == 1, '', 'swipe_action')}" onclick="{!c.doNext}" disabled="{!sub(v.display_count,v.carousel_index) == 1}"/>
+                    </div>
+                </aura:if>
+                <!-- END : for desktop -->
+                <!-- ================= -->
+                <!-- ================= -->
+                <!-- START : for phone -->
+                <aura:if isTrue="{!$Browser.isPhone}">
+                    <div class="slds-col slds-size_1-of-1 slds-text-align_right">                    
+                        <lightning:buttonIcon iconName="utility:brush" variant="bare" alternativeText="stroke" size="medium" iconClass="popup_action" title="stroke" onclick="{!c.openPopup}" name="stroke"/>
+                        <lightning:buttonIcon iconName="utility:comments" variant="bare" alternativeText="example" size="medium" iconClass="popup_action" title="example" onclick="{!c.openPopup}" name="example"/>
+                    </div>
+                </aura:if>
+                <!-- END : for phone -->
+                <!-- ================= -->
+            </footer>  
+            <!-- END : card body -->  
+            <!-- ================= -->        
+          </article>
+        <!-- END : card -->
+        <!-- ================= -->
+    </div>
+    <!-- END : surface -->
+    <!-- ================= -->
+</aura:if>
+<!-- END : when show landing -->
+<!-- ================================== -->
+<!-- ================================== -->
+<!-- START : popup -->
+<aura:if isTrue="{!v.showPopup}">
+    <c:KANJI_PopUp showPopup="{!v.showPopup}" mode="{!v.mode}" element="{!v.focusedElement}"></c:KANJI_PopUp>
+</aura:if>
+<!-- END : popup -->
+<!-- ================================== -->
+<!-- END : DOM Design -->
+<!-- ======================================================================= -->
+<!-- ####################################################################### -->
+</aura:component>
