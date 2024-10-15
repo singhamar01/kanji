@@ -889,5 +889,51 @@
         "examples": [],
         "onyomi": [],
         "example_count": 0
-    }
+    },
+    {
+        "key": "掛",
+        "symbol": "掛",
+        "level": 4,
+        "complexity": "easy",
+        "kunyomi": [
+            "ふとん"
+        ],
+        "examples": [
+            {
+                "key": "ふとん",
+                "phrase": "ひ",
+                "phrase_reading": "ひ",
+                "english": "Comforter Cover - Upper",
+                "example": "ふとん",
+                "example_reading": "Futon",
+                "sentence": "Ye upar wala hai",
+                "sentence_reading": "Ye Rajai ka hain"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "敷",
+        "symbol": "敷",
+        "level": 4,
+        "complexity": "easy",
+        "kunyomi": [
+            "ふとん"
+        ],
+        "examples": [
+            {
+                "key": "ふとん",
+                "phrase": "ひ",
+                "phrase_reading": "ひ",
+                "english": "Futon Cover - Down",
+                "example": "ふとん",
+                "example_reading": "Futon",
+                "sentence": "Ye niche wala hai",
+                "sentence_reading": "Ye bed ka hain"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    }        
 ]
