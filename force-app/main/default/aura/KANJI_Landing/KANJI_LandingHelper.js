@@ -81,6 +81,7 @@
 		let element_row_indx = parseInt(component.get('v.carousel_index'),10);		
 		let mode = event.currentTarget.name;		
 		let focusedElement = component.get('v.displayPharseList')[element_row_indx];
+        console.log(mode);
 		component.set('v.mode', mode);
 		component.set('v.focusedElement', focusedElement);
 		component.set("v.showPopup", true);
