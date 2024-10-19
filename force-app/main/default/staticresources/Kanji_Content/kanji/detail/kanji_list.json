@@ -8,8 +8,7 @@
             "ひと"
         ],
         "onyomi": [
-            "ジン",
-            "ニン"
+            "ジン\nニン"
         ],
         "help_text": "Person's kanji",
         "examples": [
@@ -52,12 +51,10 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "ひ",
-            "か"
+            "ひ\nか"
         ],
         "onyomi": [
-            "ニチ",
-            ""
+            "ニチ\n"
         ],
         "help_text": "Day Kanji",
         "examples": [
@@ -113,9 +110,7 @@
             "ひと（つ）"
         ],
         "onyomi": [
-            "イチ",
-            "イッ",
-            "ツイ"
+            "イチ\nイッ\nツイ"
         ],
         "help_text": "number kanji",
         "examples": [
@@ -178,8 +173,7 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "ふた（つ）",
-            "ふつ（か）"
+            "ふた（つ）\nふつ（か）"
         ],
         "onyomi": [
             "ニ"
@@ -281,9 +275,7 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "よん",
-            "よ",
-            "よっ（つ）"
+            "よん\nよ\nよっ（つ）"
         ],
         "onyomi": [
             "シ"
@@ -502,8 +494,7 @@
             "ここの"
         ],
         "onyomi": [
-            "キュウ",
-            "ク"
+            "キュウ\nク"
         ],
         "help_text": "number kanji",
         "examples": [
@@ -541,8 +532,7 @@
             "つき"
         ],
         "onyomi": [
-            "ゲツ",
-            "ガツ"
+            "ゲツ\nガツ"
         ],
         "examples": [
             {
@@ -745,8 +735,7 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "み（ます）",
-            "み（せます）"
+            "み（ます）\nみ（せます）"
         ],
         "examples": [
             {
@@ -891,49 +880,26 @@
         "example_count": 0
     },
     {
-        "key": "掛",
-        "symbol": "掛",
+        "key": "重複",
+        "symbol": "重複",
         "level": 4,
         "complexity": "easy",
         "kunyomi": [
-            "ふとん"
+            "ちょうふく"
         ],
         "examples": [
             {
-                "key": "ふとん",
-                "phrase": "ひ",
-                "phrase_reading": "ひ",
-                "english": "Comforter Cover - Upper",
-                "example": "ふとん",
-                "example_reading": "Futon",
-                "sentence": "Ye upar wala hai",
-                "sentence_reading": "Ye Rajai ka hain"
+                "key": "重複",
+                "phrase": "ちょうふく",
+                "phrase_reading": "ちょうふく",
+                "english": "duplicate,repitation",
+                "example": "二つ",
+                "example_reading": "ふたつ",
+                "sentence": "TBD",
+                "sentence_reading": "TBD"
             }
         ],
         "onyomi": [],
         "example_count": 1
-    },
-    {
-        "key": "敷",
-        "symbol": "敷",
-        "level": 4,
-        "complexity": "easy",
-        "kunyomi": [
-            "ふとん"
-        ],
-        "examples": [
-            {
-                "key": "ふとん",
-                "phrase": "ひ",
-                "phrase_reading": "ひ",
-                "english": "Futon Cover - Down",
-                "example": "ふとん",
-                "example_reading": "Futon",
-                "sentence": "Ye niche wala hai",
-                "sentence_reading": "Ye bed ka hain"
-            }
-        ],
-        "onyomi": [],
-        "example_count": 1
-    }        
+    }
 ]
