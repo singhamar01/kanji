@@ -55,6 +55,8 @@
 		let localContext = this;
 		const gsheet_id = $A.get("$Label.c.GSHEET_ID"); 
 		const gsheet_key = $A.get("$Label.c.GSHEET_KEY"); 
+		//console.log('::'+gsheet_id);
+		//console.log('::'+gsheet_key);
 		const sheetEndpoint = "https://www.googleapis.com/drive/v3/files/"+gsheet_id+"/export?mimeType=application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet&key="+gsheet_key;    
 		fetch(sheetEndpoint).then(function(response){
 			return response.arrayBuffer();
