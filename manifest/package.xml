@@ -8,6 +8,7 @@
     </types>
     <types>
         <members>Kanji_Content</members>
+        <members>Sheet_JS</members>
         <name>StaticResource</name>
     </types>
     <version>61.0</version>

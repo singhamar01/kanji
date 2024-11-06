@@ -10,6 +10,16 @@
     width: 100%;
     overflow: auto;
 }
+.THIS .highlighter{
+    color:rgb(247, 44, 44);
+}
+.THIS  .reading{
+    font-size: 9px;
+    /*color: rgb(65, 63, 63);*/
+}
+.THIS .reading_highlighter{
+    color:rgb(247, 44, 44);
+}
 /* ############################################ */
 /* START :STROKE SVG CSS */
 

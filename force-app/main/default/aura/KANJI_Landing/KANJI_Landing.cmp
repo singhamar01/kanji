@@ -15,11 +15,13 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
 <aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
 <!-- ======================================================================= -->
 <!-- START : Include external JS -->  
+<ltng:require scripts="{!$Resource.Sheet_JS}" afterScriptsLoaded="{!c.extJsLoaded}"/>
 <!-- END : Include external JS -->  
 <!-- ======================================================================= -->
 <!-- ####################################################################### -->
 <!-- ======================================================================= -->
 <!-- START : Declare Attributes -->
+<aura:attribute name="showLoader" type="Boolean" default="false" description="to show loader"/>
 <aura:attribute name="showLanding" type="Boolean" default="true" description="to show landing option"/>
 <aura:attribute name="target" type="String" default="" description="to keep selected target"/>
 <aura:attribute name="inDesignMode" type="Boolean" default="false" description="to identify design mode"/>
@@ -44,6 +46,19 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
 <!-- ####################################################################### -->
 <!-- ======================================================================= -->
 <!-- START : DOM Design -->  
+<!-- ================================== -->
+<!-- START : when show loader -->
+<aura:if isTrue="{!v.showLoader}">
+    <div class="slds-spinner_container">
+        <div role="status" class="slds-spinner slds-spinner_medium">
+            <span class="slds-assistive-text">Loading</span>
+            <div class="slds-spinner__dot-a"></div>
+            <div class="slds-spinner__dot-b"></div>
+        </div>
+    </div>
+</aura:if>
+<!-- END : when show load</div>er -->
+<!-- ================================== -->
 <!-- ================================== -->
 <!-- START : when show landing -->
 <aura:if isTrue="{!v.showLanding}">      
@@ -112,7 +127,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                             <!-- ================= -->
                                             <!-- START : phrase key -->
                                             <div class="slds-box flash_card_key">
-                                                {!item.key}
+                                                <aura:unescapedHtml value="{!item.key}"/>                                                
                                             </div>                   
                                             <!-- END : phrase key -->
                                             <!-- ================= -->
@@ -123,7 +138,9 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                                 <!-- START : kunyomi -->
                                                 <div class="flash_card_reading">
                                                     <aura:iteration items="{!item.kunyomi}" var="kunyomi_item"  indexVar="kunyomi_indx">
-                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">{!kunyomi_item}</span>
+                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">
+                                                            <aura:unescapedHtml value="{!kunyomi_item}"/>
+                                                        </span>                                                        
                                                     </aura:iteration>
                                                 </div>
                                                 <!-- END : kunyomi -->
@@ -132,7 +149,9 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                                 <!-- START : onyomi -->
                                                 <div class="flash_card_reading">
                                                     <aura:iteration items="{!item.onyomi}" var="onyomi_item"  indexVar="onyomi_indx">
-                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">{!onyomi_item}</span>
+                                                        <span class="slds-badge slds-badge_lightest flash_card_badge">                                                            
+                                                            <aura:unescapedHtml value="{!onyomi_item}"/>
+                                                        </span>
                                                     </aura:iteration>
                                                 </div>
                                                 <!-- END : onyomi -->
@@ -162,6 +181,15 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                         <!-- ================= -->
                                         <!-- START : example -->
                                         <div class="flash_card_example_container slds-m-top_small">
+                                            <!-- ================= -->
+                                            <!-- START : more example -->
+                                            <aura:if isTrue="{!item.example_count > 2}">
+                                                <div class="slds-text-align_right slds-m-bottom_small slds-m-top_small">
+                                                    Click on <lightning:buttonIcon iconName="utility:comments" variant="bare" alternativeText="example" size="medium" iconClass="popup_action" title="example" onclick="{!c.openPopup}" name="example"/> icon to see all &#40;{!item.example_count}&#41; example&#40;s&#41;
+                                                </div>
+                                            </aura:if>
+                                            <!-- END : more example -->
+                                            <!-- ================= -->
                                             <aura:iteration items="{!item.examples}" var="example_item"  indexVar="example_indx" end="2">
                                                 <div class="flash_card_example_item slds-box slds-m-top_small slds-form">
                                                     <!-- ================= -->
@@ -169,7 +197,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                                     <div class="slds-form-element">
                                                         <label class="slds-form-element__label">Keyword &#40;Phrase&#41;</label>
                                                         <div class="slds-form-element__control">
-                                                            <div>{!example_item.example} &#40;{!example_item.phrase}&#41;</div>
+                                                            <div><aura:unescapedHtml value="{!example_item.example}"/> &#40;<aura:unescapedHtml value="{!example_item.phrase}"/>&#41;</div>
                                                         </div>
                                                     </div>
                                                     <!-- END : Phrase -->
@@ -179,7 +207,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                                     <div class="slds-form-element">
                                                         <label class="slds-form-element__label">English Context</label>
                                                         <div class="slds-form-element__control">
-                                                            <div>{!example_item.english}</div>
+                                                            <div><aura:unescapedHtml value="{!example_item.english}"/></div>
                                                         </div>
                                                     </div>
                                                     <!-- END : English -->
@@ -190,13 +218,14 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                                         <label class="slds-form-element__label">Sentence</label>
                                                         <div class="slds-form-element__control">
                                                             <div><aura:unescapedHtml value="{!example_item.sentence}"/></div>
-                                                            <div><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>                                                            
+                                                            <div class="reading"><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>
                                                         </div>
                                                     </div>
                                                     <!-- END : Sentence -->
                                                     <!-- ================= -->                                                    
                                                 </div>
                                             </aura:iteration>
+                                            
                                         </div>
                                         <!-- END : example -->
                                         <!-- ================= -->                                        

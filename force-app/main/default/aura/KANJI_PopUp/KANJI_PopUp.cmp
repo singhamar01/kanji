@@ -55,7 +55,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
             <!-- ================= -->
             <!-- START : modal title -->
             <div class="slds-modal__header">
-                <h1 class="slds-modal__title slds-hyphenate">{!v.element.key} : {!v.mode}
+                <h1 class="slds-modal__title slds-hyphenate"><aura:unescapedHtml value="{!v.element.key}"/> : {!v.mode}
                     <aura:if isTrue="{!v.mode=='example'}">
                         &nbsp;&#40;{!v.element.example_count}&#41;
                     </aura:if>
@@ -85,7 +85,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                             <div class="slds-form-element">
                                 <label class="slds-form-element__label">Keyword &#40;Phrase&#41;</label>
                                 <div class="slds-form-element__control">
-                                    <div>{!example_item.example} &#40;{!example_item.phrase}&#41;</div>
+                                    <div><aura:unescapedHtml value="{!example_item.example}"/> &#40;<aura:unescapedHtml value="{!example_item.phrase}"/>&#41;</div>
                                 </div>
                             </div>
                             <!-- END : Phrase -->
@@ -95,7 +95,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                             <div class="slds-form-element">
                                 <label class="slds-form-element__label">English Context</label>
                                 <div class="slds-form-element__control">
-                                    <div>{!example_item.english}</div>
+                                    <div><aura:unescapedHtml value="{!example_item.english}"/></div>
                                 </div>
                             </div>
                             <!-- END : English -->
@@ -106,7 +106,7 @@ VERSION     AUTHOR            DATE              DETAIL                   FEATURE
                                 <label class="slds-form-element__label">Sentence</label>
                                 <div class="slds-form-element__control">
                                     <div><aura:unescapedHtml value="{!example_item.sentence}"/></div>
-                                    <div><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>                                                            
+                                    <div class="reading"><aura:unescapedHtml value="{!example_item.sentence_reading}"/></div>
                                 </div>
                             </div>
                             <!-- END : Sentence -->
