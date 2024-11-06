@@ -53,8 +53,8 @@
    	*****************************************************/	
 	fetchPharseListFromGSheet : function(component, event, helper) {
 		let localContext = this;
-		const gsheet_id = '1kqcD2c43_nFjHfBtsuHUROdpLjrBuiMQir4EtkDOEmU';//"1ORHT_gu1LGTlVUUghub9QyV0F2rhNSeR";//;
-		const gsheet_key = 'AIzaSyDGyQopqbQ8Dyk8OmIBWMdji4X2i_yM54o';
+		const gsheet_id = $A.get("$Label.vat.GSHEET_ID"); 
+		const gsheet_key = $A.get("$Label.vat.GSHEET_KEY"); 
 		const sheetEndpoint = "https://www.googleapis.com/drive/v3/files/"+gsheet_id+"/export?mimeType=application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet&key="+gsheet_key;    
 		fetch(sheetEndpoint).then(function(response){
 			return response.arrayBuffer();
