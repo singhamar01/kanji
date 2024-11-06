@@ -65,7 +65,20 @@
     text-align: left;
     
 }
+.THIS.surface .app_body .flash_card_example_container .popup_action{ 
+    fill: rgb(40, 125, 221) !important;
+}
+.THIS.surface .app_body .flash_card_example_container .highlighter{
+    color:rgb(247, 44, 44);
+}
 
+.THIS.surface .app_body .flash_card_example_container .reading{
+    font-size: 9px;
+    /*color: rgb(65, 63, 63);*/
+}
+.THIS.surface .app_body .flash_card_example_container .reading_highlighter{
+    color:rgb(247, 44, 44);
+}
 /* END : app_body */
 /* ########################################## */
 /* ########################################## */

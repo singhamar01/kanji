@@ -6,9 +6,25 @@
    	** Updated by :   	
    	*****************************************************/	
 	doInit: function (component, event, helper) {
+		console.log('calling do init');
 		var inDesignMode = document.location.href.toLowerCase().indexOf( 'commeditor' ) >= 0;
 		component.set("v.inDesignMode", inDesignMode);	        
-        helper.fetchPharseList(component, event, helper);
+        //helper.fetchPharseList(component, event, helper);
+	},
+	/***************************************************
+   	** Name : extJsLoaded
+   	** Purpose : 
+   	** Created by :SAMYA 
+   	** Updated by :   	
+   	*****************************************************/	
+	extJsLoaded: function (component, event, helper) {
+		console.log('after js load');
+		try{
+			helper.fetchPharseListFromGSheet(component, event, helper);	
+		}
+		catch(ex){
+			alert(ex);
+		}
 	},
 	/***************************************************
    	** Name : doSearch

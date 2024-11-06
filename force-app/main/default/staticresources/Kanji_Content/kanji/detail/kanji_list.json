@@ -8,7 +8,8 @@
             "ひと"
         ],
         "onyomi": [
-            "ジン\nニン"
+            "ジン",
+            "ニン"
         ],
         "help_text": "Person's kanji",
         "examples": [
@@ -51,10 +52,12 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "ひ\nか"
+            "ひ",
+            "か"
         ],
         "onyomi": [
-            "ニチ\n"
+            "ニチ",
+            ""
         ],
         "help_text": "Day Kanji",
         "examples": [
@@ -110,7 +113,9 @@
             "ひと（つ）"
         ],
         "onyomi": [
-            "イチ\nイッ\nツイ"
+            "イチ",
+            "イッ",
+            "ツイ"
         ],
         "help_text": "number kanji",
         "examples": [
@@ -173,7 +178,8 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "ふた（つ）\nふつ（か）"
+            "ふた（つ）",
+            "ふつ（か）"
         ],
         "onyomi": [
             "ニ"
@@ -212,12 +218,12 @@
             },
             {
                 "key": "二",
-                "phrase": "ニ",
+                "phrase": "二",
                 "phrase_reading": "に",
                 "english": "Two (count)",
-                "example": "ニ個",
+                "example": "二個",
                 "example_reading": "にこ",
-                "sentence": "チキンカツをニ個ください",
+                "sentence": "チキンカツを二個ください",
                 "sentence_reading": "チキンカツをにこください"
             }
         ],
@@ -275,7 +281,9 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "よん\nよ\nよっ（つ）"
+            "よん",
+            "よ",
+            "よっ（つ）"
         ],
         "onyomi": [
             "シ"
@@ -461,10 +469,37 @@
         "help_text": "number kanji",
         "examples": [
             {
-                "key": "七"
+                "key": "七",
+                "phrase": "なな",
+                "phrase_reading": "なな",
+                "english": "Seven (count)",
+                "example": "七つ",
+                "example_reading": "ななつ",
+                "sentence": "チョコレートを七つください。",
+                "sentence_reading": "チョコレートをななつください。"
+            },
+            {
+                "key": "七",
+                "phrase": "なの",
+                "phrase_reading": "なの",
+                "english": "Seven (days)",
+                "example": "七日",
+                "example_reading": "なのか",
+                "sentence": "七月七日は休みです。",
+                "sentence_reading": "しちがつなのかはやすみです。"
+            },
+            {
+                "key": "七",
+                "phrase": "シチ",
+                "phrase_reading": "シチ",
+                "english": "Seven (Person)",
+                "example": "七人",
+                "example_reading": "しちにん",
+                "sentence": "友達七人と私はレストランに行きました。",
+                "sentence_reading": "ともだちしちにんとわたしはレストランに行きました。"
             }
         ],
-        "example_count": 1
+        "example_count": 3
     },
     {
         "key": "八",
@@ -472,7 +507,8 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "やっ（つ）"
+            "やっ（つ）",
+            "よ う（か）"
         ],
         "onyomi": [
             "ハチ"
@@ -480,10 +516,38 @@
         "help_text": "number kanji",
         "examples": [
             {
-                "key": "八"
+                "key": "八",
+                "phrase": "やっ",
+                "phrase_reading": "やっ",
+                "english": "Eight (count)",
+                "example": "八つ",
+                "example_reading": "やっつ",
+                "sentence": "このりんごを八つください。",
+                "sentence_reading": "このりんごをやっつください。",
+                "special": true
+            },
+            {
+                "key": "八",
+                "phrase": "よ う",
+                "phrase_reading": "よ う",
+                "english": "Eight (days)",
+                "example": "八日",
+                "example_reading": "ようか",
+                "sentence": "シンガポールに八日いました。",
+                "sentence_reading": "シンガポールにようかいました。"
+            },
+            {
+                "key": "八",
+                "phrase": "ハチ",
+                "phrase_reading": "はち",
+                "english": "Eight (Person)",
+                "example": "八人",
+                "example_reading": "はちにん",
+                "sentence": "かぞくは八人います。",
+                "sentence_reading": "かぞくははちにんいます。"
             }
         ],
-        "example_count": 1
+        "example_count": 3
     },
     {
         "key": "九",
@@ -494,15 +558,53 @@
             "ここの"
         ],
         "onyomi": [
-            "キュウ\nク"
+            "キュウ",
+            "ク"
         ],
         "help_text": "number kanji",
         "examples": [
             {
-                "key": "九"
+                "key": "九",
+                "phrase": "ここの",
+                "phrase_reading": "ここの",
+                "english": "Nine (count)",
+                "example": "九つ",
+                "example_reading": "ここのつ",
+                "sentence": "コーヒーを九つください。",
+                "sentence_reading": "コーヒーをここのつください。"
+            },
+            {
+                "key": "九",
+                "phrase": "ここの",
+                "phrase_reading": "ここの",
+                "english": "Nine (days)",
+                "example": "九日",
+                "example_reading": "ここのか",
+                "sentence": "イタリアに九日いました。",
+                "sentence_reading": "イタリアにここのかいました。"
+            },
+            {
+                "key": "九",
+                "phrase": "キュウ",
+                "phrase_reading": "きゅう",
+                "english": "Nine (Person)",
+                "example": "九人",
+                "example_reading": "きゅうにん",
+                "sentence": "かぞくは九人です。",
+                "sentence_reading": "かぞくはきゅうにんです。"
+            },
+            {
+                "key": "九",
+                "phrase": "ク",
+                "phrase_reading": "く",
+                "english": "Nine (month)",
+                "example": "九月",
+                "example_reading": "くがつ",
+                "sentence": "きょうは九月九日です。",
+                "sentence_reading": "きょうは九月くがつです。"
             }
         ],
-        "example_count": 1
+        "example_count": 4
     },
     {
         "key": "十",
@@ -518,10 +620,17 @@
         "help_text": "number kanji",
         "examples": [
             {
-                "key": "十"
+                "key": "十",
+                "phrase": "とお",
+                "phrase_reading": "とお"
+            },
+            {
+                "key": "十",
+                "phrase": "ジュウ",
+                "phrase_reading": "じゅう"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "月",
@@ -532,14 +641,27 @@
             "つき"
         ],
         "onyomi": [
-            "ゲツ\nガツ"
+            "ゲツ",
+            "ガツ"
         ],
         "examples": [
             {
-                "key": "月"
+                "key": "月",
+                "phrase": "つき",
+                "phrase_reading": "つき"
+            },
+            {
+                "key": "月",
+                "phrase": "ゲツ",
+                "phrase_reading": "げつ"
+            },
+            {
+                "key": "月",
+                "phrase": "ガツ",
+                "phrase_reading": "がつ"
             }
         ],
-        "example_count": 1
+        "example_count": 3
     },
     {
         "key": "火",
@@ -554,10 +676,17 @@
         ],
         "examples": [
             {
-                "key": "火"
+                "key": "火",
+                "phrase": "ひ",
+                "phrase_reading": "ひ"
+            },
+            {
+                "key": "火",
+                "phrase": "カ",
+                "phrase_reading": "か"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "水",
@@ -572,10 +701,17 @@
         ],
         "examples": [
             {
-                "key": "水"
+                "key": "水",
+                "phrase": "みず",
+                "phrase_reading": "みず"
+            },
+            {
+                "key": "水",
+                "phrase": "スイ",
+                "phrase_reading": "すい"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "木",
@@ -590,10 +726,17 @@
         ],
         "examples": [
             {
-                "key": "木"
+                "key": "木",
+                "phrase": "き",
+                "phrase_reading": "き"
+            },
+            {
+                "key": "木",
+                "phrase": "モク",
+                "phrase_reading": "もく"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "金",
@@ -608,10 +751,17 @@
         ],
         "examples": [
             {
-                "key": "金"
+                "key": "金",
+                "phrase": "かね",
+                "phrase_reading": "かね"
+            },
+            {
+                "key": "金",
+                "phrase": "キン",
+                "phrase_reading": "きん"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "土",
@@ -623,7 +773,9 @@
         ],
         "examples": [
             {
-                "key": "土"
+                "key": "土",
+                "phrase": "ド",
+                "phrase_reading": "ど"
             }
         ],
         "kunyomi": [],
@@ -639,11 +791,25 @@
         ],
         "examples": [
             {
-                "key": "百"
+                "key": "百",
+                "phrase": "ヒャク",
+                "phrase_reading": "ひゃく"
             }
         ],
         "kunyomi": [],
         "example_count": 1
+    },
+    {
+        "key": "千",
+        "symbol": "千",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "セン"
+        ],
+        "examples": [],
+        "kunyomi": [],
+        "example_count": 0
     },
     {
         "key": "万",
@@ -655,7 +821,9 @@
         ],
         "examples": [
             {
-                "key": "万"
+                "key": "万",
+                "phrase": "マン",
+                "phrase_reading": "まん"
             }
         ],
         "kunyomi": [],
@@ -671,7 +839,9 @@
         ],
         "examples": [
             {
-                "key": "円"
+                "key": "円",
+                "phrase": "エン",
+                "phrase_reading": "えん"
             }
         ],
         "kunyomi": [],
@@ -690,10 +860,17 @@
         ],
         "examples": [
             {
-                "key": "行"
+                "key": "行",
+                "phrase": "い",
+                "phrase_reading": "い"
+            },
+            {
+                "key": "行",
+                "phrase": "コウ",
+                "phrase_reading": "こう"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "来",
@@ -708,10 +885,17 @@
         ],
         "examples": [
             {
-                "key": "来"
+                "key": "来",
+                "phrase": "き",
+                "phrase_reading": "き"
+            },
+            {
+                "key": "来",
+                "phrase": "ライ",
+                "phrase_reading": "らい"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "休",
@@ -723,7 +907,9 @@
         ],
         "examples": [
             {
-                "key": "休"
+                "key": "休",
+                "phrase": "やす",
+                "phrase_reading": "やす"
             }
         ],
         "onyomi": [],
@@ -735,11 +921,14 @@
         "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "み（ます）\nみ（せます）"
+            "み（ます）",
+            "み（せます）"
         ],
         "examples": [
             {
-                "key": "見"
+                "key": "見",
+                "phrase": "み",
+                "phrase_reading": "み"
             }
         ],
         "onyomi": [],
@@ -758,10 +947,17 @@
         ],
         "examples": [
             {
-                "key": "今"
+                "key": "今",
+                "phrase": "いま",
+                "phrase_reading": "いま"
+            },
+            {
+                "key": "今",
+                "phrase": "コン",
+                "phrase_reading": "こん"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "大",
@@ -776,10 +972,17 @@
         ],
         "examples": [
             {
-                "key": "大"
+                "key": "大",
+                "phrase": "おお",
+                "phrase_reading": "おお"
+            },
+            {
+                "key": "大",
+                "phrase": "ダイ",
+                "phrase_reading": "だい"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "小",
@@ -794,10 +997,17 @@
         ],
         "examples": [
             {
-                "key": "小"
+                "key": "小",
+                "phrase": "ちい",
+                "phrase_reading": "ちい"
+            },
+            {
+                "key": "小",
+                "phrase": "ショウ",
+                "phrase_reading": "しょう"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "上",
@@ -812,10 +1022,17 @@
         ],
         "examples": [
             {
-                "key": "上"
+                "key": "上",
+                "phrase": "うえ",
+                "phrase_reading": "うえ"
+            },
+            {
+                "key": "上",
+                "phrase": "ジャウ",
+                "phrase_reading": "じゃう"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "下",
@@ -830,10 +1047,17 @@
         ],
         "examples": [
             {
-                "key": "下"
+                "key": "下",
+                "phrase": "した",
+                "phrase_reading": "した"
+            },
+            {
+                "key": "下",
+                "phrase": "カ",
+                "phrase_reading": "か"
             }
         ],
-        "example_count": 1
+        "example_count": 2
     },
     {
         "key": "中",
@@ -848,58 +1072,1600 @@
         ],
         "examples": [
             {
-                "key": "中"
+                "key": "中",
+                "phrase": "なか",
+                "phrase_reading": "なか"
+            },
+            {
+                "key": "中",
+                "phrase": "チュウ",
+                "phrase_reading": "ちゅう"
+            }
+        ],
+        "example_count": 2
+    },
+    {
+        "key": "右",
+        "symbol": "右",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みぎ"
+        ],
+        "examples": [
+            {
+                "key": "右"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "左",
+        "symbol": "左",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひだり"
+        ],
+        "examples": [
+            {
+                "key": "左"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "山",
+        "symbol": "山",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "やま"
+        ],
+        "onyomi": [
+            "サン"
+        ],
+        "examples": [
+            {
+                "key": "山"
             }
         ],
         "example_count": 1
     },
     {
-        "key": "東京",
-        "symbol": "東京",
-        "level": 4,
+        "key": "川",
+        "symbol": "川",
+        "level": 5,
         "complexity": "easy",
         "kunyomi": [
-            "とうきょう"
-        ],
-        "onyomi": [
-            "トウキョウ"
-        ],
-        "examples": [],
-        "example_count": 0
-    },
-    {
-        "key": "船堀",
-        "symbol": "船堀",
-        "level": 4,
-        "complexity": "easy",
-        "kunyomi": [
-            "ふなぼり"
-        ],
-        "examples": [],
-        "onyomi": [],
-        "example_count": 0
-    },
-    {
-        "key": "重複",
-        "symbol": "重複",
-        "level": 4,
-        "complexity": "easy",
-        "kunyomi": [
-            "ちょうふく"
+            "かわ",
+            "がわ"
         ],
         "examples": [
             {
-                "key": "重複",
-                "phrase": "ちょうふく",
-                "phrase_reading": "ちょうふく",
-                "english": "duplicate,repitation",
-                "example": "二つ",
-                "example_reading": "ふたつ",
-                "sentence": "TBD",
-                "sentence_reading": "TBD"
+                "key": "川"
             }
         ],
         "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "白",
+        "symbol": "白",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "しろ（い）",
+            "しろ"
+        ],
+        "examples": [
+            {
+                "key": "白"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "本",
+        "symbol": "本",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ホン"
+        ],
+        "examples": [
+            {
+                "key": "本"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "子",
+        "symbol": "子",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "こ"
+        ],
+        "examples": [
+            {
+                "key": "子"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "男",
+        "symbol": "男",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "おとこ"
+        ],
+        "examples": [
+            {
+                "key": "男"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "女",
+        "symbol": "女",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "おんな"
+        ],
+        "examples": [
+            {
+                "key": "女"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "父",
+        "symbol": "父",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ちち"
+        ],
+        "examples": [
+            {
+                "key": "父"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "母",
+        "symbol": "母",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "はは"
+        ],
+        "examples": [
+            {
+                "key": "母"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "友",
+        "symbol": "友",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "とも"
+        ],
+        "examples": [
+            {
+                "key": "友"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "先",
+        "symbol": "先",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "さき"
+        ],
+        "onyomi": [
+            "セン"
+        ],
+        "examples": [
+            {
+                "key": "先"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "生",
+        "symbol": "生",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "う（まれます）"
+        ],
+        "onyomi": [
+            "セイ"
+        ],
+        "examples": [
+            {
+                "key": "生"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "学",
+        "symbol": "学",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ガク"
+        ],
+        "examples": [
+            {
+                "key": "学"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "校",
+        "symbol": "校",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "コウ"
+        ],
+        "examples": [
+            {
+                "key": "校"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "何",
+        "symbol": "何",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "なん",
+            "なに"
+        ],
+        "examples": [
+            {
+                "key": "何"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "時",
+        "symbol": "時",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "とき"
+        ],
+        "onyomi": [
+            "ジ"
+        ],
+        "examples": [
+            {
+                "key": "時"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "間",
+        "symbol": "間",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あいだ"
+        ],
+        "onyomi": [
+            "カン"
+        ],
+        "examples": [
+            {
+                "key": "間"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "分",
+        "symbol": "分",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "フン",
+            "プン",
+            "ブン"
+        ],
+        "examples": [
+            {
+                "key": "分"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "半",
+        "symbol": "半",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ハン "
+        ],
+        "examples": [
+            {
+                "key": "半"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "毎",
+        "symbol": "毎",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "マイ"
+        ],
+        "examples": [
+            {
+                "key": "毎"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "年",
+        "symbol": "年",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "とし"
+        ],
+        "onyomi": [
+            "ネン"
+        ],
+        "examples": [
+            {
+                "key": "年"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "前",
+        "symbol": "前",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "まえ"
+        ],
+        "onyomi": [
+            "ゼン"
+        ],
+        "examples": [
+            {
+                "key": "前"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "後",
+        "symbol": "後",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "うし（ろ）",
+            "あと"
+        ],
+        "onyomi": [
+            "ゴ"
+        ],
+        "examples": [
+            {
+                "key": "後"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "午",
+        "symbol": "午",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ゴ"
+        ],
+        "examples": [
+            {
+                "key": "午"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "名",
+        "symbol": "名",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "な"
+        ],
+        "onyomi": [
+            "メイ"
+        ],
+        "examples": [
+            {
+                "key": "名"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "車",
+        "symbol": "車",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "くるま"
+        ],
+        "onyomi": [
+            "シャ"
+        ],
+        "examples": [
+            {
+                "key": "車"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "天",
+        "symbol": "天",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "テン"
+        ],
+        "examples": [
+            {
+                "key": "天"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "気",
+        "symbol": "気",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "キ"
+        ],
+        "examples": [
+            {
+                "key": "気"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "電",
+        "symbol": "電",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "デン"
+        ],
+        "examples": [
+            {
+                "key": "電"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "話",
+        "symbol": "話",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "はんし",
+            "はな"
+        ],
+        "onyomi": [
+            "ワ"
+        ],
+        "examples": [
+            {
+                "key": "話"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "食",
+        "symbol": "食",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "た"
+        ],
+        "onyomi": [
+            "ショウ"
+        ],
+        "examples": [
+            {
+                "key": "食"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "聞",
+        "symbol": "聞",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "き"
+        ],
+        "onyomi": [
+            "ブン"
+        ],
+        "examples": [
+            {
+                "key": "聞"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "書",
+        "symbol": "書",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "か"
+        ],
+        "examples": [
+            {
+                "key": "書"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "読",
+        "symbol": "読",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "よ（みます）"
+        ],
+        "examples": [
+            {
+                "key": "読"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "国",
+        "symbol": "国",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "くに"
+        ],
+        "onyomi": [
+            "コク"
+        ],
+        "examples": [
+            {
+                "key": "国"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "外",
+        "symbol": "外",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "そと"
+        ],
+        "onyomi": [
+            "ガイ"
+        ],
+        "examples": [
+            {
+                "key": "外"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "語",
+        "symbol": "語",
+        "level": 5,
+        "onyomi": [
+            "ゴ"
+        ],
+        "help_text": "Language",
+        "examples": [
+            {
+                "key": "語"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "入",
+        "symbol": "入",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "い（れます）",
+            "はい（ります）"
+        ],
+        "help_text": "Stroke opposite of ひと",
+        "examples": [
+            {
+                "key": "入"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "出",
+        "symbol": "出",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "だ（します）",
+            "で（ます）"
+        ],
+        "help_text": "Exit",
+        "examples": [
+            {
+                "key": "出"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "雨",
+        "symbol": "雨",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あめ"
+        ],
+        "examples": [
+            {
+                "key": "雨"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "東",
+        "symbol": "東",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひがし"
+        ],
+        "onyomi": [
+            "トウ"
+        ],
+        "help_text": "East, Tokyo",
+        "examples": [
+            {
+                "key": "東"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "西",
+        "symbol": "西",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "にし"
+        ],
+        "help_text": "West",
+        "examples": [
+            {
+                "key": "西"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "南",
+        "symbol": "南",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みなみ"
+        ],
+        "help_text": "South",
+        "examples": [
+            {
+                "key": "南"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "北",
+        "symbol": "北",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "きた"
+        ],
+        "help_text": "North",
+        "examples": [
+            {
+                "key": "北"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "長",
+        "symbol": "長",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "なが（い）"
+        ],
+        "help_text": "Long",
+        "examples": [
+            {
+                "key": "長"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "高",
+        "symbol": "高",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "たか（い）"
+        ],
+        "help_text": "Costly",
+        "examples": [
+            {
+                "key": "高"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "口",
+        "symbol": "口",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "くち",
+            "ぐち"
+        ],
+        "help_text": "Mouth、entrance",
+        "examples": [
+            {
+                "key": "口"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "目",
+        "symbol": "目",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "め"
+        ],
+        "help_text": "eye",
+        "examples": [
+            {
+                "key": "目"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "手",
+        "symbol": "手",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "て"
+        ],
+        "help_text": "hand",
+        "examples": [
+            {
+                "key": "手"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "足",
+        "symbol": "足",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あし"
+        ],
+        "help_text": "leg",
+        "examples": [
+            {
+                "key": "足"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "近",
+        "symbol": "近",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ちか（い）"
+        ],
+        "help_text": "near",
+        "examples": [
+            {
+                "key": "近"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "有",
+        "symbol": "有",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あ（ります）"
+        ],
+        "onyomi": [
+            "ユウ"
+        ],
+        "help_text": "famous",
+        "examples": [
+            {
+                "key": "有"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "花",
+        "symbol": "花",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "はな"
+        ],
+        "help_text": "flower",
+        "examples": [
+            {
+                "key": "花"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "赤",
+        "symbol": "赤",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あか（い）",
+            "あか"
+        ],
+        "help_text": "Red, kid",
+        "examples": [
+            {
+                "key": "赤"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "紙",
+        "symbol": "紙",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "かみ"
+        ],
+        "examples": [
+            {
+                "key": "紙"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "買",
+        "symbol": "買",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "か（います）"
+        ],
+        "examples": [
+            {
+                "key": "買"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "朝",
+        "symbol": "朝",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あさ"
+        ],
+        "help_text": "Morning",
+        "examples": [
+            {
+                "key": "朝"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "昼",
+        "symbol": "昼",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひる"
+        ],
+        "help_text": "Noon",
+        "examples": [
+            {
+                "key": "昼"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "夕",
+        "symbol": "夕",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ゆう"
+        ],
+        "help_text": "Evening",
+        "examples": [
+            {
+                "key": "夕"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "夜",
+        "symbol": "夜",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "よる"
+        ],
+        "help_text": "Night",
+        "examples": [
+            {
+                "key": "夜"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "私",
+        "symbol": "私",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "わたし"
+        ],
+        "examples": [
+            {
+                "key": "私"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "家",
+        "symbol": "家",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "いえ"
+        ],
+        "onyomi": [
+            "カ"
+        ],
+        "help_text": "House",
+        "examples": [
+            {
+                "key": "家"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "会",
+        "symbol": "会",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あ（います）"
+        ],
+        "onyomi": [
+            "カイ"
+        ],
+        "help_text": "meet",
+        "examples": [
+            {
+                "key": "会"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "社",
+        "symbol": "社",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "シャ"
+        ],
+        "help_text": "company",
+        "examples": [
+            {
+                "key": "社"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "店",
+        "symbol": "店",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みせ"
+        ],
+        "help_text": "Shop, Store",
+        "examples": [
+            {
+                "key": "店"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "飲",
+        "symbol": "飲",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "の（みます）"
+        ],
+        "examples": [
+            {
+                "key": "飲"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "多",
+        "symbol": "多",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "おお（い）"
+        ],
+        "help_text": "lots of",
+        "examples": [
+            {
+                "key": "多"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "少",
+        "symbol": "少",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "すこ（し）",
+            "すく（ない）"
+        ],
+        "help_text": "less, a little",
+        "examples": [
+            {
+                "key": "少"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "古",
+        "symbol": "古",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ふる（い）"
+        ],
+        "help_text": "Old, not new",
+        "examples": [
+            {
+                "key": "古"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "新",
+        "symbol": "新",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "あたら（しい）"
+        ],
+        "onyomi": [
+            "シン"
+        ],
+        "examples": [
+            {
+                "key": "新"
+            }
+        ],
+        "example_count": 1
+    },
+    {
+        "key": "広",
+        "symbol": "広",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ひろ（い）"
+        ],
+        "examples": [
+            {
+                "key": "広"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "安",
+        "symbol": "安",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "やす（い）"
+        ],
+        "examples": [
+            {
+                "key": "安"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "立",
+        "symbol": "立",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "た（ちます）"
+        ],
+        "examples": [
+            {
+                "key": "立"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "知",
+        "symbol": "知",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "し（ります）"
+        ],
+        "examples": [
+            {
+                "key": "知",
+                "phrase": "し",
+                "phrase_reading": "し",
+                "english": "know",
+                "example": "知りません",
+                "example_reading": "しりませんん",
+                "sentence": "あの女の人を知っていますか？",
+                "sentence_reading": "あのおんなのひとをしっていますか？"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "言",
+        "symbol": "言",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "い（います）"
+        ],
+        "onyomi": [
+            "こと"
+        ],
+        "help_text": "being",
+        "examples": [
+            {
+                "key": "言",
+                "phrase": "い",
+                "phrase_reading": "い",
+                "english": "announce,tell",
+                "example": "言います",
+                "example_reading": "いいます",
+                "sentence": "今なんといいましたか？",
+                "sentence_reading": "いまなんといましたか"
+            },
+            {
+                "key": "言",
+                "phrase": "こと",
+                "phrase_reading": "こと",
+                "english": "word",
+                "example": "言",
+                "example_reading": "こと",
+                "sentence": "そのことを知っていますか",
+                "sentence_reading": "そのことをしっていますか。"
+            }
+        ],
+        "example_count": 2
+    },
+    {
+        "key": "思",
+        "symbol": "思",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "おも（います）"
+        ],
+        "help_text": "Think",
+        "examples": [
+            {
+                "key": "思",
+                "phrase": "おも",
+                "phrase_reading": "おも",
+                "english": "think",
+                "example": "思います",
+                "example_reading": "思います",
+                "sentence": "日本の天ぷらはおいしいと思います。",
+                "sentence_reading": "にほんのてんぷらわおいしいとおもいます。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "歩",
+        "symbol": "歩",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "ある（きます）"
+        ],
+        "help_text": "Walk",
+        "examples": [
+            {
+                "key": "歩",
+                "phrase": "ある",
+                "phrase_reading": "ある",
+                "english": "Walk",
+                "example": "歩いて",
+                "example_reading": "あるいて",
+                "sentence": "私の家は駅から歩いて七分です。",
+                "sentence_reading": "わたしのいえはえきからあるいてななふんです。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "走",
+        "symbol": "走",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "はし（ります）"
+        ],
+        "help_text": "Run",
+        "examples": [
+            {
+                "key": "走",
+                "phrase": "シュウ",
+                "phrase_reading": "しゅう",
+                "english": "Week",
+                "example": "来週",
+                "example_reading": "らいしゅう",
+                "sentence": "来週月曜日はお休みです。",
+                "sentence_reading": "らいしゅうげつよびはおやすみです。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "住",
+        "symbol": "住",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "す（みます）"
+        ],
+        "help_text": "Live",
+        "examples": [
+            {
+                "key": "住",
+                "phrase": "す",
+                "phrase_reading": "す",
+                "english": "Living",
+                "example": "住みます",
+                "example_reading": "すみます",
+                "sentence": "家族と日本に七年ぐらい住んでいます",
+                "sentence_reading": "かぞくとにほんにななねんぐらいすんでいます。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "空",
+        "symbol": "空",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "そら"
+        ],
+        "help_text": "sky：",
+        "examples": [
+            {
+                "key": "空",
+                "phrase": "そら",
+                "phrase_reading": "そら",
+                "english": "Sky",
+                "example": "空",
+                "example_reading": "そら",
+                "sentence": "今空がきれいですね。",
+                "sentence_reading": "いまそらがきれいですね。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "週",
+        "symbol": "週",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "シュウ"
+        ],
+        "examples": [
+            {
+                "key": "週"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "魚",
+        "symbol": "魚",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "さかな"
+        ],
+        "help_text": "Fish",
+        "examples": [
+            {
+                "key": "魚",
+                "phrase": "さかな",
+                "phrase_reading": "さかな",
+                "english": "Fish",
+                "example": "魚",
+                "example_reading": "さかな"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "耳",
+        "symbol": "耳",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みみ"
+        ],
+        "help_text": "ear",
+        "examples": [
+            {
+                "key": "耳",
+                "phrase": "みみ",
+                "phrase_reading": "みみ",
+                "english": "ear",
+                "example": "耳",
+                "example_reading": "みみ",
+                "sentence": "うさぎの耳は長いです。",
+                "sentence_reading": "うさぎの耳はながいです。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "銀",
+        "symbol": "銀",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "ギン"
+        ],
+        "examples": [
+            {
+                "key": "銀"
+            }
+        ],
+        "kunyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "道",
+        "symbol": "道",
+        "level": 5,
+        "complexity": "easy",
+        "kunyomi": [
+            "みち"
+        ],
+        "help_text": "Road",
+        "examples": [
+            {
+                "key": "道",
+                "phrase": "みち",
+                "phrase_reading": "みち",
+                "english": "Street",
+                "example": "道",
+                "example_reading": "みち",
+                "sentence": "家の前の道は広いです。",
+                "sentence_reading": "いえのまえのみちはひろいです。"
+            }
+        ],
+        "onyomi": [],
+        "example_count": 1
+    },
+    {
+        "key": "駅",
+        "symbol": "駅",
+        "level": 5,
+        "complexity": "easy",
+        "onyomi": [
+            "エキ"
+        ],
+        "help_text": "Train",
+        "examples": [
+            {
+                "key": "駅",
+                "phrase": "エキ",
+                "phrase_reading": "えき",
+                "english": "Train",
+                "example": "駅",
+                "example_reading": "えき",
+                "sentence": "私の家は駅から歩いて十分です。",
+                "sentence_reading": "わたしのいえはえきからあるいてじゅっぷんです。"
+            }
+        ],
+        "kunyomi": [],
         "example_count": 1
     }
 ]
