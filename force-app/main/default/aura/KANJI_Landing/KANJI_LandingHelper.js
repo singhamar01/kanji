@@ -73,15 +73,24 @@
 			});
 			
 			//---------------------------------------//
-			component.set('v.pharseList', data);
-			console.log('iteration done');
+			localContext.calculate(component, data);
+			
+		}));		
+	},
+     /***************************************************
+   	** Name : calculate
+   	** Purpose : to show toast
+   	** Created by :SAMYA 
+   	** Updated by :   	
+   	*****************************************************/	
+    calculate : function(component, data) {
+            component.set('v.pharseList', data);
+        console.log('iteration done in calculate');
 			this.KANJI_DATA = data;
 			console.log('iteration done');
 			component.set('v.displayPharseList', data);		
 			component.set('v.display_count', data.length+'');
-			
-		}));		
-	},
+    },
 	/***************************************************
    	** Name : prepareJSON
    	** Purpose : to show toast
